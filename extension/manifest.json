@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Aegis URL Guardian",
+  "description": "AI-powered, high-precision phishing and malicious URL detector with a premium, minimal UI.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scan this page"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
+
+

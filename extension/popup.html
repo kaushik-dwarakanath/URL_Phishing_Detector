@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aegis URL Guardian</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="chrome-window">
+      <div class="window-chrome">
+        <span class="dot red"></span>
+        <span class="dot amber"></span>
+        <span class="dot green"></span>
+        <span class="title">Aegis URL Guardian</span>
+      </div>
+      <main class="content">
+        <section class="url-section">
+          <label class="label">Current URL</label>
+          <div class="url-pill" id="url-text">Loading...</div>
+        </section>
+
+        <section class="status-section">
+          <div class="status-card neutral" id="status-card">
+            <div class="status-chip" id="status-chip">Ready to scan</div>
+            <div class="status-headline" id="status-headline">
+              One tap to know if this page is safe.
+            </div>
+            <div class="status-subtitle" id="status-subtitle">
+              We run a local AI model over the URL structure — nothing leaves
+              your machine.
+            </div>
+
+            <div class="risk-meter">
+              <div class="risk-labels">
+                <span>Safe</span>
+                <span>Risky</span>
+              </div>
+              <div class="risk-bar">
+                <div class="risk-fill" id="risk-fill"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="actions">
+          <button id="scan-button" class="primary-button">
+            Scan this URL
+          </button>
+          <button id="rescan-button" class="ghost-button hidden">
+            Re-scan
+          </button>
+        </section>
+
+        <section class="meta">
+          <span class="meta-pill">On-device scoring</span>
+          <span class="meta-pill">XGBoost model</span>
+          <span class="meta-pill">Latency &lt; 50ms*</span>
+        </section>
+
+        <footer class="footer">
+          <span class="footnote"
+            >*Actual performance depends on your machine and network to the
+            local API.</span
+          >
+        </footer>
+      </main>
+    </div>
+    <script src="popup.js" type="module"></script>
+  </body>
+  </html>
+
+
