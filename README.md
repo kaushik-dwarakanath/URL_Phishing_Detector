@@ -7,7 +7,6 @@ AI-powered phishing / malicious URL classifier backed by a high-accuracy XGBoost
 - **Create a virtualenv (recommended)**:
 
 ```bash
-cd /home/kaushik/Documents/url_phishing_new
 python3 -m venv .venv
 source .venv/bin/activate
 ```
