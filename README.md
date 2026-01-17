@@ -1,4 +1,4 @@
-## Aegis URL Guardian – Phishing URL Detector
+## URL Phishing Detector
 
 AI-powered phishing / malicious URL classifier backed by a high-accuracy XGBoost model, exposed via a FastAPI backend and a premium-style browser extension UI.
 
@@ -76,5 +76,3 @@ The extension:
   - On `/predict`, extracts URL features server-side and returns a **probability of phishing**.
 
 You can tweak `train_model.py` hyperparameters to push accuracy even higher if you benchmark on your own validation splits.
-
-
