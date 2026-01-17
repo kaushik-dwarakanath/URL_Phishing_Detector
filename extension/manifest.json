@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Aegis URL Guardian",
+  "name": "URL Phishing Detector",
   "description": "AI-powered, high-precision phishing and malicious URL detector with a premium, minimal UI.",
   "version": "1.0.0",
   "action": {

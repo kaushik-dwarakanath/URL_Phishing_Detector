@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("Aegis URL Guardian installed.");
+  console.log("URL Phishing Detector installed.");
 });
 
 
